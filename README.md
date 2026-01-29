@@ -8,9 +8,7 @@ We release our artifacts of Data Augmentation (Generation) and Fine-tuning inclu
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Data Augmentation & Model Training](#data-augmentation--model-training)
-- [Docs](docs/index.md)
-- [Experimental Workflow](#experimental-workflow)
-- [Results Interpretation](#results-interpretation)
+- [Detailed Results](docs/index.md)
 
 ---
 
