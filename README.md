@@ -8,7 +8,8 @@ We release our artifacts of Data Augmentation (Generation) and Fine-tuning inclu
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Data Augmentation & Model Training](#data-augmentation--model-training)
-- [Detailed Results](docs/index.md)
+- [Visualization](#visualization)
+- [Detailed Results](#detailed-results)
 
 ---
 
@@ -122,7 +123,6 @@ The augmented sets by each data augmentation are saved inside ```\temp``` folder
 Each checkpoints of fine-tuned models are also saved inside ```\temp``` folder with format, ```train_{dataset}_{da}_{model}```.<br />
 
 
----
 
 ### If you want to evaluate with a specific case, follow the script below.<br />
 ```
@@ -140,6 +140,7 @@ model: <br />
 ```deberta```, ```xlnet```, and ```t5``` for SLM<br />
 ```codegen```, ```phi```, and ```deepseek``` for LLM<br />
 
+---
 
 ## Visualization
 If you want to check our visualizations of Figure 5 and 7 from our paper, you can confirm the figures by running these codes.
@@ -153,3 +154,9 @@ CUDA_VISIBLE_DEVICES=0,1,2 python visualize_loss_psa.py -dataset github -da none
 CUDA_VISIBLE_DEVICES=0,1,2 python visualize_shapley.py -dataset github -da none -model xlnet
 CUDA_VISIBLE_DEVICES=0,1,2 python visualize_shapley.py -dataset github -da none -model phi2
 ```
+
+---
+
+## Detailed Results
+
+A detailed results for our experiments are presented in our document pages in - [Detailed Results](docs/index.md).
