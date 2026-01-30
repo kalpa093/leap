@@ -101,7 +101,7 @@ for dataset in "${datasets[@]}"; do
 	done
 done
 
-echo "Script for LLM-FT is Running"
+echo "Script for LLM is Running"
 
 datasets=("app" "so" "github" "jira" "gerrit" "tweets" " tweets_n" "tweets_p")
 da=("none" "aeda" "ssmba" "c2l" "ts")
