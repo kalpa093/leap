@@ -5,25 +5,11 @@ We release our artifacts of Data Augmentation (Generation) and Fine-tuning inclu
 
 ## Table of Contents
 
-- [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Data Augmentation & Model Training](#data-augmentation--model-training)
 - [Visualization](#visualization)
 - [Detailed Results](#detailed-results)
 
----
-
-## Overview
-
-This framework enables research on feature-based backdoor attacks by:
-
-1. **Training baseline models** on clean datasets (CelebA, Stanford Online Products)
-2. **Creating blacklists** by extracting features from a small subset of training data
-3. **Assigning wrong labels** to blacklist entries for backdoor triggers
-4. **Evaluating attack effectiveness** through hit rate and accuracy metrics
-5. **Analyzing computational overhead** of blacklist checking during inference
-
-The attack works by computing cosine similarity between test sample features and blacklist features. When similarity exceeds a threshold, the model's prediction is replaced with a pre-defined wrong label.
 
 ---
 
