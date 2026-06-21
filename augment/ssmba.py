@@ -131,7 +131,7 @@ if __name__ == "__main__":
     parser.add_argument('--seed', type=int)
     parser.add_argument('--model', type=str, default='bert-base-uncased')
     parser.add_argument('--tokenizer', type=str, default=None)
-    parser.add_argument('--noise-prob', type=float, default=0.15)
+    parser.add_argument('--noise-prob', type=float, default=0.25)
     parser.add_argument('--random-token-prob', type=float, default=0.1)
     parser.add_argument('--leave-unmasked-prob', type=float, default=0.1)
     parser.add_argument('--batch', type=int, default=8)
