@@ -222,12 +222,10 @@ def build_causal_mask_with_precomputed(data_loader, all_importances, sampling_ra
             continue
 
         for _ in range(augment_ratio):
-            # 모든 causal 단어를 mask, 모든 non-causal 단어를 mask
             if sampling_ratio is None:
                 causal_masked_tokens = [tokens[i] if causal_mask[i] == 0 else tokenizer.mask_token_id for i in range(len(tokens))]
                 noncausal_masked_tokens = [tokens[i] if causal_mask[i] == 1 else tokenizer.mask_token_id for i in range(len(tokens))]
 
-            # sampling_ratio 갯수 (int) 만큼의 단어를 mask
             elif type(sampling_ratio) == int:
                 causal_indices = np.where(np.array(causal_mask) == 1)[0]
                 noncausal_indices = np.where(np.array(causal_mask) == 0)[0]
@@ -245,7 +243,6 @@ def build_causal_mask_with_precomputed(data_loader, all_importances, sampling_ra
                 causal_masked_tokens = [tokens[i] if i not in causal_mask_indices else tokenizer.mask_token_id for i in range(len(tokens))]
                 noncausal_masked_tokens = [tokens[i] if i not in noncausal_mask_indices else tokenizer.mask_token_id for i in range(len(tokens))]
 
-            # sampling_ratio 비율 (%) 만큼의 단어를 mask
             else:
                 pass
 
@@ -432,12 +429,10 @@ def build_propensity_causal_mask_with_precomputed(data_loader, all_importances, 
             continue
 
         for _ in range(augment_ratio):
-            # 모든 causal 단어를 mask, 모든 non-causal 단어를 mask
             if sampling_ratio is None:
                 causal_masked_tokens = [tokens[i] if causal_mask[i] == 0 else tokenizer.mask_token_id for i in range(len(tokens))]
                 noncausal_masked_tokens = [tokens[i] if causal_mask[i] == 1 else tokenizer.mask_token_id for i in range(len(tokens))]
 
-            # sampling_ratio 갯수 (int) 만큼의 단어를 mask
             elif type(sampling_ratio) == int:
                 causal_indices = np.where(np.array(causal_mask) == 1)[0]
                 noncausal_indices = np.where(np.array(causal_mask) == 0)[0]
@@ -455,7 +450,6 @@ def build_propensity_causal_mask_with_precomputed(data_loader, all_importances, 
                 causal_masked_tokens = [tokens[i] if i not in causal_mask_indices else tokenizer.mask_token_id for i in range(len(tokens))]
                 noncausal_masked_tokens = [tokens[i] if i not in noncausal_mask_indices else tokenizer.mask_token_id for i in range(len(tokens))]
 
-            # sampling_ratio 비율 (%) 만큼의 단어를 mask
             else:
                 pass
 
