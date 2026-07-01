@@ -1,6 +1,6 @@
-# Sentiment Analysis in Software Engineering: How Far Are We with Data Augmentation
+# Is It Worth It? An Empirical Study of Data Augmentation for Sentiment Analysis in Software Engineering
 
-This repository is an implementation of the paper "Sentiment Analysis in Software Engineering: How Far Are We with Data Augmentation" submitted to the ISSTA 2026.
+This repository is an implementation of the paper "Is It Worth It? An Empirical Study of Data Augmentation for Sentiment Analysis in Software Engineering" submitted to the ICSE 2027.
 We release our artifacts of Data Augmentation (Generation) and Fine-tuning including our visualizations to facilitate further research and adoption.
 
 ## Table of Contents
@@ -129,7 +129,7 @@ model: <br />
 ---
 
 ## Visualization
-If you want to check our visualizations of Figure 5 and 7 from our paper, you can confirm the figures by running these codes.
+If you want to check our visualizations of Figure 5, 10a, and 10b from our paper, you can confirm the figures by running these codes.
 
 
 ```
