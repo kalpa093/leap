@@ -214,7 +214,7 @@ def train_and_save():
             num_labels=len(LABEL_LIST),
             quantization_config=bnb_config, 
             trust_remote_code=True,
-            device_map="auto" # QLoRA일 때만 사용
+            device_map="auto"
         )
         model = prepare_model_for_kbit_training(model)
         
