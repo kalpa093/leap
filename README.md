@@ -1,6 +1,6 @@
 # Is It Worth It? An Empirical Study of Data Augmentation for Sentiment Analysis in Software Engineering
 
-This repository is an implementation of the paper "Is It Worth It? An Empirical Study of Data Augmentation for Sentiment Analysis in Software Engineering" submitted to the ICSE 2027.
+This repository is an implementation of the paper "Is It Worth It? An Empirical Study of Data Augmentation for Sentiment Analysis in Software Engineering".
 We release our artifacts of Data Augmentation (Generation) and Fine-tuning including our visualizations to facilitate further research and adoption.
 
 ## Table of Contents
